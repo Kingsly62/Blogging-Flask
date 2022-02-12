@@ -1,10 +1,14 @@
-const parentContainer = document.querySelector('.card1');
-parentContainer.addEventListener('click',event=>{
-    const current = event.target;
-    const isReadMoreBtn = current.className.includes('readmore-btn');
-    if(!isReadMoreBtn) return;
-
-    const currentText = event.target.parentNode.querySelector('.readmore')
-
-    currentText.classList.toggle('.readmore --show');
-})
+var i = 0;
+function read() {
+  if (!i) {
+    document.getElementById("readmore").style.display = "inline";
+    document.getElementById("dots").style.display = "none";
+    document.getElementById("read").innerHTML = "Read Less";
+    i = 1;
+  } else {
+    document.getElementById("readmore").style.display = "none";
+    document.getElementById("dots").style.display = "inline";
+    document.getElementById("read").innerHTML = "Read more";
+    i = 0;
+  }
+}
