@@ -1,0 +1,80 @@
+body{
+    background-color: beige;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    background-color: #fff;
+    height: 300px;
+    width: 90%;
+    margin-right: -10px;
+    margin: 1rem;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+button[type=like]{
+    height: 10%;
+    width: 15%;
+    top: 90%;
+    position: absolute;
+    margin-left: -20%;
+    background-color: green;
+    border-radius: 3px;
+
+}
+
+button[type=dislike]{
+    height: 10%;
+    width: 15%;
+    top: 90%;
+    margin-right: -20%;
+    position: absolute;
+    background-color: red;
+    border-radius: 3px;
+}
+
+button[type=comment]{
+    height: 10%;
+    width: 15%;
+    top: 90%;
+    position: absolute;
+    margin-right: -60%;
+    background: brown;
+    border-radius: 3px;
+}
+
+.meta{
+    top: 40%;
+    position: absolute;
+}
+
+.health{
+    top: 52%;
+    position: absolute;
+}
+
+#health{
+    margin-left: -80%;
+}
+
+.healhd h2{
+    text-align: center;
+    margin-right: -30%;
+
+}

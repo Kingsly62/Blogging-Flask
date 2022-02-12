@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Space Grotesk;
+    background: #1E1F31;
+    overflow-x: hidden;
+}
+
+h2{
+    color: whitesmoke;
+}
+
+.wrapper{
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
