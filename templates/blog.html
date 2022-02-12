@@ -19,7 +19,8 @@
           company’s vision ......is <br />to help bring the metaverse to life,
           so we are changing our name to reflect<br />
           our commitment to this future.
-          <span class="readmore"
+          <span id="dots">...</span
+          ><span id="readmore"
             >Meta Platforms, Inc., doing business<br />
             as Meta and formerly known as Facebook, I<br />., is an American
             multinational technology conglomerate based in Menlo Park,
@@ -28,7 +29,7 @@
             of Facebook, Instagram, and WhatsApp, among other
             subsidiaries.</span
           >
-          <span class="readmore-btn">Readmore....</span>
+          <button type="button" id="read" onclick="read()">Read-more</button>
         </p>
         <button type="like">Like</button>
         <button type="dislike">Dislike</button>
@@ -76,3 +77,15 @@
     <script src="/static/JS/blog.js"></script>
   </body>
 </html>
+<script>
+  const parentContainer = document.querySelector(".card1");
+  parentContainer.addEventListener("click", (event) => {
+    const current = event.target;
+    const isReadMoreBtn = current.className.includes("readmore-btn");
+    if (!isReadMoreBtn) return;
+
+    const currentText = event.target.parentNode.querySelector(".readmore");
+
+    currentText.classList.toggle(".readmore --show");
+  });
+</script>

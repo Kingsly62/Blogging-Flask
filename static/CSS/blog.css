@@ -92,15 +92,15 @@ button[type=comment]{
     margin-left: -230%;
 }
 
-.readmore{
+
+#readmore{
     display: none;
 }
 
-.readmore-btn{
-    color: blue;
-    font-size: large;
-}
-
-.readmore--show{
-    display: inline;
+button[type=button]{
+    background-color: red;
+    color: whitesmoke;
+    font-size: 30px;
+    border-radius: 4px;
+    padding: 5px;
 }
