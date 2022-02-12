@@ -100,3 +100,7 @@ button[type=comment]{
     color: blue;
     font-size: large;
 }
+
+.readmore--show{
+    display: inline;
+}
