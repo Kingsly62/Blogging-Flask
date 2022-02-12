@@ -69,12 +69,34 @@ button[type=comment]{
     position: absolute;
 }
 
-#health{
-    margin-left: -80%;
+#health img{
+    margin-left: -230%;
 }
 
 .healhd h2{
-    text-align: center;
-    margin-right: -30%;
+    color: red;
 
+
+}
+
+.phonepara{
+    top: 40%;
+    position: absolute;
+}
+
+.phone img{
+    margin-left: -230%;
+}
+
+.met img{
+    margin-left: -230%;
+}
+
+.readmore{
+    display: none;
+}
+
+.readmore-btn{
+    color: blue;
+    font-size: large;
 }
