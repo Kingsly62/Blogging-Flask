@@ -45,3 +45,21 @@ function readPhone() {
 }
 
 
+// const dislikebtn = document.querySelector('.dislike_btn');
+//   const dislikeIcon = document.querySelector('#icons');
+//   const count = document.querySelector('#counts');
+  
+//   let clicked = false;
+  
+//   dislikebtn.addEventListener('click',()=>{
+//     if(!clicked){
+//       clicked = true;
+//       dislikeIcon.innerHTML = `<i class="fa fa-thumbs-down"></i>`
+    //   count.textContent++;
+    // }
+    // else{
+    //   clicked = false;
+    //   dislikeIcon.innerHTML= `<i class="fa fa-thumbs-down"></i>`
+  //     count.textContent++;
+  //   }
+  // });

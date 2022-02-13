@@ -38,8 +38,8 @@
         </p>
         <button type="like" class="like_btn"> <span id="icon"><i class="fa fa-thumbs-up"></i></span>
           <span id="count">0</span>Like</button>
-        <button type="dislike"> <span id="icon"><i class="fa fa-thumbs-down"></i></span>
-          <span id="count">0</span>Dislike</button>
+        <button type="dislike" class="dislike_btn"> <span id="icons"><i class="fa fa-thumbs-down"></i></span>
+          <span id="counts">0</span>Dislike</button>
         <button type="comment">Comment</button>
       </div>
       <div class="card1">
@@ -92,24 +92,27 @@
     <script src="/static/JS/blog.js"></script>
   </body>
 </html>
+
+
 <script>
 
-const likebtn = document.querySelector('.like_btn');
-const likeIcon = document.querySelector('#icon');
-const count = document.querySelector('#count');
+  const likebtn = document.querySelector('.like_btn');
+  const likeIcon = document.querySelector('#icon');
+  const count = document.querySelector('#count');
+  
+  let clicked = false;
+  
+  likebtn.addEventListener('click',()=>{
+    if(!clicked){
+      clicked = true;
+      likeIcon.innerHTML = `<i class="fa fa-thumbs-up"></i>`
+      count.textContent++;
+    }
+    else{
+      clicked = false;
+      likeIcon.innerHTML= `<i class="fa fa-thumbs-up"></i>`
+      count.textContent++;
+    }
 
-let clicked = false;
-
-likebtn.addEventListener('click',()=>{
-  if(!clicked){
-    clicked = true;
-    likeIcon.innerHTML = `<i class="fa fa-thumbs-up"></i>`
-    count.textContent++;
-  }
-  else{
-    clicked = false;
-    likeIcon.innerHTML= `<i class="fa fa-thumbs-up"></i>`
-    count.textContent++;
-  }
-})
+  });
 </script>
