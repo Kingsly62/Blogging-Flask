@@ -1,4 +1,4 @@
-# USER AUTHENTICATION
+# BLOGGING APPLICATION
 
 ## Built By Clinton Kioge
 
@@ -22,14 +22,13 @@ Get started:https://github.com/Kingsly62/Blogging-Flask
 
 ### Heroku live link to my website
 
-[Click](https://clinton-pitch.herokuapp.com/)
+[Click]()
 
 ### SetUp / Installation Requirements
 
 - $ pip install flask
 - $ pip install gunicorn
 - $ pip install flask_sqlalchemy
-- $ pip install passlib
 
 ##### Prerequisites
 
