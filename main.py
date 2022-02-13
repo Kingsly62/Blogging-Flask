@@ -18,6 +18,11 @@ def contact():
     return render_template('contact.html')
 
 
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
+
 @app.route('/post')
 def post():
     return render_template('create_post.html')
