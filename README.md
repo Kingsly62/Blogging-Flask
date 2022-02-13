@@ -4,7 +4,7 @@
 
 ### Description
 
-Pitches is an application that allow new users to sign up by creating an account.Then they will be prompted to the signin page.The next will prompt user to make a comment by voting a desired person.
+Blogging is an application that allow new users to create,edit , save and delete blogs in the platform.Upon clicking the start button they will be prompted to the blogging page to like ,dislike and comment on a blog.
 
 ### User Stories
 
