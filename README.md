@@ -40,7 +40,7 @@ Get started:https://github.com/Kingsly62/Blogging-Flask
 In your terminal:
 
 - $ git clone
-- $ cd Pitches-Application
+- $ cd Flask-Blogging
 
 ### Running the Application
 
