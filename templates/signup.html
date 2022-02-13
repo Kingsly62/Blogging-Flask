@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class="contact">
+      <div class="message"></div>
       <form action="" id="form" style="border: 1px solid #ccc">
         <div class="container">
           <h1>Sign Up</h1>
@@ -21,7 +22,6 @@
             placeholder="Enter Email"
             name="email"
             id="email"
-            required
           />
 
           <label for="password"><b>Password</b></label>
@@ -79,9 +79,30 @@
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    var confirmpassword = document.getElementById("confirmpassword").value;
-    var remember = document.getElementById("me").value;
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+    var confirmpassword = document.getElementById("confirmpassword");
+    var remember = document.getElementById("me");
+
+    if (email.value == "") {
+      error.push("enter your email");
+    }
+    if (password.value == "") {
+      error.push("Enter your password");
+    }
+
+    if (confirmpassword == "") {
+      error.push("Confirm your password");
+    }
+
+    if (remember == "") {
+      error.push("Click checkbox");
+    }
+
+    alert("Form is submitted");
+
+    var message = document.getElementById("message");
+
+    message.innerText = error;
   });
 </script>
