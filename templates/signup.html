@@ -9,20 +9,27 @@
   </head>
   <body>
     <div class="contact">
-      <form action="action_page.php" style="border: 1px solid #ccc">
+      <form action="" id="form" style="border: 1px solid #ccc">
         <div class="container">
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
           <hr />
 
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required />
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            id="email"
+            required
+          />
 
           <label for="password"><b>Password</b></label>
           <input
             type="password"
             placeholder="Enter Password"
             name="password"
+            id="password"
             required
           />
 
@@ -31,6 +38,7 @@
             type="password"
             placeholder="confirm Password"
             name="password-confirm"
+            id="passwordconfirm"
             required
           />
 
@@ -40,6 +48,8 @@
               checked="checked"
               name="remember"
               style="margin-bottom: 15px"
+              id="me"
+              required
             />
             Remember me
           </label>
@@ -60,3 +70,18 @@
     </div>
   </body>
 </html>
+
+<script>
+  var form = document.getElementById("form");
+
+  var error = [];
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var confirmpassword = document.getElementById("confirmpassword").value;
+    var remember = document.getElementById("me").value;
+  });
+</script>
