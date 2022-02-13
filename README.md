@@ -18,7 +18,7 @@ These are the behaviours/features that the application implements for use by a u
 
 ### Link to my Github Account(project)
 
-Get started:https://github.com/Kingsly62/Pitches-Application
+Get started:https://github.com/Kingsly62/Blogging-Flask
 
 ### Heroku live link to my website
 
