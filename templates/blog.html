@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <link rel="stylesheet" href="/static/CSS/blog.css" />
     <title>Document</title>
   </head>
@@ -29,10 +32,14 @@
             of Facebook, Instagram, and WhatsApp, among other
             subsidiaries.</span
           ><br />
-          <button type="button" id="read" onclick="read()">Read-more</button>
+          <button type="button" id="read" onclick="read()">Read-more
+           
+          </button>
         </p>
-        <button type="like">Like</button>
-        <button type="dislike">Dislike</button>
+        <button type="like" class="like_btn"> <span id="icon"><i class="fa fa-thumbs-up"></i></span>
+          <span id="count">0</span>Like</button>
+        <button type="dislike"> <span id="icon"><i class="fa fa-thumbs-down"></i></span>
+          <span id="count">0</span>Dislike</button>
         <button type="comment">Comment</button>
       </div>
       <div class="card1">
@@ -55,8 +62,10 @@
           ><br />
           <button type="button" id="readhealth" onclick="readHealth()">Read-more</button>
         </p>
-        <button type="like">Like</button>
-        <button type="dislike">Dislike</button>
+        <button type="like"> <span id="icon"><i class="fa fa-thumbs-up"></i></span>
+          <span id="count">0</span>Like</button>
+        <button type="dislike"> <span id="icon"><i class="fa fa-thumbs-down"></i></span>
+          <span id="count">0</span>Dislike</button>
         <button type="comment">Comment</button>
       </div>
 
@@ -73,11 +82,34 @@
           In 2020, they’ll get better, faster, stronger yet.<br />
           <button type="button" id="readphone" onclick="readPhone()">Read-more</button>
         </p>
-        <button type="like">Like</button>
-        <button type="dislike">Dislike</button>
+        <button type="like"> <span id="icon"><i class="fa fa-thumbs-up"></i></span>
+          <span id="count">0</span>Like</button>
+        <button type="dislike"> <span id="icon"><i class="fa fa-thumbs-down"></i></span>
+          <span id="count">0</span>Dislike</button>
         <button type="comment">Comment</button>
       </div>
     </div>
     <script src="/static/JS/blog.js"></script>
   </body>
 </html>
+<script>
+
+const likebtn = document.querySelector('.like_btn');
+const likeIcon = document.querySelector('#icon');
+const count = document.querySelector('#count');
+
+let clicked = false;
+
+likebtn.addEventListener('click',()=>{
+  if(!clicked){
+    clicked = true;
+    likeIcon.innerHTML = `<i class="fa fa-thumbs-up"></i>`
+    count.textContent++;
+  }
+  else{
+    clicked = false;
+    likeIcon.innerHTML= `<i class="fa fa-thumbs-up"></i>`
+    count.textContent++;
+  }
+})
+</script>
