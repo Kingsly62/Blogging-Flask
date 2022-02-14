@@ -83,7 +83,7 @@ nav ul li{
 
 nav ul{
     display: flex;
-    gap: 15px;
+    gap: 10px;
     text-decoration: none;
     color: azure;
 }
