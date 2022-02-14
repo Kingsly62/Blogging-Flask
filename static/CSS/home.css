@@ -196,6 +196,12 @@ ul ul li a:hover{
 
 }
 
+.text h3{
+    top: 15%;
+    position: absolute;
+
+}
+
 .img{
     position: relative;
     width: 500px;
@@ -356,6 +362,9 @@ footer input[type=submit]:hover{
 }
 
 
-
+.container{
+    top: 50%;
+    position: absolute;
+}
 
 
