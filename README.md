@@ -12,8 +12,8 @@ These are the behaviours/features that the application implements for use by a u
 
 #### As a user I would like:
 
-- To create an create an aunthentication website where i can get started by clicking start button.
-- Receiives daily news updates
+- To create an create an blog where user can edit ,post ,comment on a post as like and dislike the content in the posted post website where i can get started by clicking start button.
+- Get motivated by Quotes ,by clicking the button.
 - Get more news from different countries as it updates it self.
 
 ### Link to my Github Account(project)
@@ -35,7 +35,7 @@ Get started:https://github.com/Kingsly62/Blogging-Flask
 - Werkzeug==2.0.3
 - yapf==0.32.0
 
-### Set /Installation Requirements.
+### Setup /Installation Requirements.
 
 - $ pip install flask
 - $ pip install gunicorn
