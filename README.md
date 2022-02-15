@@ -24,11 +24,23 @@ Get started:https://github.com/Kingsly62/Blogging-Flask
 
 [Click]()
 
-### SetUp / Installation Requirements
+### SetUp / Installation Requirements.
+
+- click==8.0.3
+- Flask==2.0.2
+- gunicorn==20.1.0
+- itsdangerous==2.0.1
+- Jinja2==3.0.3
+- MarkupSafe==2.0.1
+- Werkzeug==2.0.3
+- yapf==0.32.0
+
+### Set /Installation Requirements.
 
 - $ pip install flask
 - $ pip install gunicorn
 - $ pip install flask_sqlalchemy
+- $ pip install flask gunicorn
 
 ##### Prerequisites
 

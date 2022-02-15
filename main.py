@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, redirect, render_template, url_for
 
 app = Flask(__name__)
 
@@ -21,6 +21,11 @@ def contact():
 @app.route('/signup')
 def signup():
     return render_template('signup.html')
+
+
+@app.route('/login')
+def login():
+    return render_template('Login.html')
 
 
 @app.route('/post')
