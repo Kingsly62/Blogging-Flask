@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template, url_for
+from flask import Flask, redirect, render_template, request, url_for
 
 API_KEY = "http://api.quotable.io/random"
 app = Flask(__name__)
@@ -26,7 +26,9 @@ def signup():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('Login.html')
+    email = request.form.get('email')
+    password = request.form.get('password')
+    return "The email is {} and the password is {}".format(email, password)
 
 
 @app.route('/post')
