@@ -189,6 +189,8 @@ ul ul li a:hover{
     font-size: 28px;
     line-height: 46px;
     color: #fff;
+    font-style: italic;
+    font-weight: 100;
 }
 
 .text h3 span{
