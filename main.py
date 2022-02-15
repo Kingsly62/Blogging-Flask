@@ -1,5 +1,6 @@
 from flask import Flask, redirect, render_template, url_for
 
+API_KEY = "http://api.quotable.io/random"
 app = Flask(__name__)
 
 

@@ -44,22 +44,66 @@ function readPhone() {
   }
 }
 
+//Stage 1
+  //function for like input1 button
+  let likebtn = document.querySelector('#likebtn');
+  let dislikebtn=document.querySelector('#dislikebtn');
 
-// const dislikebtn = document.querySelector('.dislike_btn');
-//   const dislikeIcon = document.querySelector('#icons');
-//   const count = document.querySelector('#counts');
-  
-//   let clicked = false;
-  
-//   dislikebtn.addEventListener('click',()=>{
-//     if(!clicked){
-//       clicked = true;
-//       dislikeIcon.innerHTML = `<i class="fa fa-thumbs-down"></i>`
-    //   count.textContent++;
-    // }
-    // else{
-    //   clicked = false;
-    //   dislikeIcon.innerHTML= `<i class="fa fa-thumbs-down"></i>`
-  //     count.textContent++;
-  //   }
-  // });
+  let input1 = document.querySelector('#input1');
+  let input2 = document.querySelector('#input2');
+
+  likebtn.addEventListener('click',()=>{
+      input1.value = parseInt(input1.value) +1;
+      input1.style.color = "#12ff00";
+  })
+
+
+  //function for input2 dislike button
+
+  dislikebtn.addEventListener('click',()=>{
+      input2.value = parseInt(input1.value) +1;
+      input2.style.color = "red";
+  })
+
+
+  //Stage 2
+  /// function for likebtn11 button
+  let likebtn11 = document.querySelector('#likebtn11');
+  let dislikebtn11 = document.querySelector('#dislikebtn11');
+
+  let input11 = document.querySelector('#input11');
+  let input22 = document.querySelector('#input22');
+
+  likebtn11.addEventListener('click',()=>{
+    input11.value = parseInt(input11.value) +1;
+    input11.style.color = "#12ff00";
+
+  })
+
+  dislikebtn11.addEventListener('click',()=>{
+    input22.value = parseInt(input22.value) +1;
+    input22.style.color = "red";
+
+  })
+
+
+  //Stage 3
+  // function of button like button111
+  let likebtn111 = document.querySelector('#likebtn111');
+  let dislikebtn111=document.querySelector('#dislikebtn111');
+
+  let input111 = document.querySelector('#input111');
+  let input222 = document.querySelector('#input222');
+
+  likebtn111.addEventListener('click',()=>{
+      input111.value = parseInt(input111.value) +1;
+      input111.style.color = "#12ff00";
+  })
+
+
+  //function for input222 dislike button
+
+  dislikebtn111.addEventListener('click',()=>{
+      input222.value = parseInt(input222.value) +1;
+      input222.style.color = "red";
+  })

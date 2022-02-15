@@ -36,10 +36,10 @@
            
           </button>
         </p>
-        <button type="like" class="like_btn"> <span id="icon"><i class="fa fa-thumbs-up"></i></span>
-          <span id="count">0</span>Like</button>
-        <button type="dislike" class="dislike_btn"> <span id="icons"><i class="fa fa-thumbs-down"></i></span>
-          <span id="counts">0</span>Dislike</button>
+        <button id="likebtn111" type="like" class="like_btn"> <span id="icon"><i class="fa fa-thumbs-up"></i></span>Like</button>
+          <input id="input111" value=0>
+        <button id="dislikebtn111" type="dislike" class="dislike_btn"> <span id="icons"><i class="fa fa-thumbs-down"></i></span>Dislike</button>
+          <input id="input222" value=0>
         <button type="comment">Comment</button>
       </div>
       <div class="card1">
@@ -62,10 +62,10 @@
           ><br />
           <button type="button" id="readhealth" onclick="readHealth()">Read-more</button>
         </p>
-        <button type="like"> <span id="icon"><i class="fa fa-thumbs-up"></i></span>
-          <span id="count">0</span>Like</button>
-        <button type="dislike"> <span id="icon"><i class="fa fa-thumbs-down"></i></span>
-          <span id="count">0</span>Dislike</button>
+        <button id="likebtn11" type="like"> <span id="icon"><i class="fa fa-thumbs-up"></i></span>Like</button>
+          <input id="input11" value="0">
+        <button id="dislikebtn11" type="dislike"> <span id="icon"><i class="fa fa-thumbs-down"></i></span>Dislike</button>
+          <input id="input22" value=0>
         <button type="comment">Comment</button>
       </div>
 
@@ -82,10 +82,11 @@
           In 2020, they’ll get better, faster, stronger yet.<br />
           <button type="button" id="readphone" onclick="readPhone()">Read-more</button>
         </p>
-        <button type="like"> <span id="icon"><i class="fa fa-thumbs-up"></i></span>
-          <span id="count">0</span>Like</button>
-        <button type="dislike"> <span id="icon"><i class="fa fa-thumbs-down"></i></span>
-          <span id="count">0</span>Dislike</button>
+        <button id="likebtn" type="like"> <span id="icon"><i class="fa fa-thumbs-up"></i></span>Like</button>
+          <input id="input1" value="0">
+
+        <button id="dislikebtn" type="dislike"> <span id="icon"><i class="fa fa-thumbs-down"></i></span>Dislike</button>
+          <input id="input2" value="0">
         <button type="comment">Comment</button>
       </div>
     </div>
@@ -95,24 +96,8 @@
 
 
 <script>
-
-  const likebtn = document.querySelector('.like_btn');
-  const likeIcon = document.querySelector('#icon');
-  const count = document.querySelector('#count');
   
-  let clicked = false;
-  
-  likebtn.addEventListener('click',()=>{
-    if(!clicked){
-      clicked = true;
-      likeIcon.innerHTML = `<i class="fa fa-thumbs-up"></i>`
-      count.textContent++;
-    }
-    else{
-      clicked = false;
-      likeIcon.innerHTML= `<i class="fa fa-thumbs-up"></i>`
-      count.textContent++;
-    }
 
-  });
+  
 </script>
+

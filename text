@@ -10,3 +10,26 @@
     
 </body>
 </html>
+
+
+
+
+const likebtn = document.querySelector('.like_btn');
+  const likeIcon = document.querySelector('#icon');
+  const count = document.querySelector('#count');
+  
+  let clicked = false;
+  
+  likebtn.addEventListener('click',()=>{
+    if(!clicked){
+      clicked = true;
+      likeIcon.innerHTML = `<i class="fa fa-thumbs-up"></i>`
+      count.textContent++;
+    }
+    else{
+      clicked = false;
+      likeIcon.innerHTML= `<i class="fa fa-thumbs-up"></i>`
+      count.textContent++;
+    }
+
+  });
