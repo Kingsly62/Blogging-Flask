@@ -44,7 +44,7 @@ function readPhone() {
   }
 }
 
-//Stage 1
+////////Stage 1
   //function for like input1 button
   let likebtn = document.querySelector('#likebtn');
   let dislikebtn=document.querySelector('#dislikebtn');
@@ -66,7 +66,7 @@ function readPhone() {
   })
 
 
-  //Stage 2
+  //////Stage 2
   /// function for likebtn11 button
   let likebtn11 = document.querySelector('#likebtn11');
   let dislikebtn11 = document.querySelector('#dislikebtn11');
@@ -87,7 +87,7 @@ function readPhone() {
   })
 
 
-  //Stage 3
+  /////////Stage 3
   // function of button like button111
   let likebtn111 = document.querySelector('#likebtn111');
   let dislikebtn111=document.querySelector('#dislikebtn111');
