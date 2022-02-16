@@ -32,6 +32,7 @@ Get started:https://github.com/Kingsly62/Blogging-Flask
 - itsdangerous==2.0.1
 - Jinja2==3.0.3
 - MarkupSafe==2.0.1
+- mysql-connector==2.2.9
 - Werkzeug==2.0.3
 - yapf==0.32.0
 
