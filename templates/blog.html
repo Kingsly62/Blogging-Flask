@@ -46,7 +46,13 @@
           <div id="close-btn2">
             <span id="close-btn2">Close</span>
           </div>
-          <h2>Comment on me</h2>
+          <form> 
+            <textarea placeholder="Leave your comment"></textarea>
+            <div class="btn">
+             <input type="submit" value="Comment">
+             <button>Cancel</button> 
+             <div>
+           </form>
         </div>
       </div>
       <div class="card1">
@@ -78,7 +84,13 @@
           <div id="close-btn1">
             <span id="close-btn1">Close</span>
           </div>
-          <h2>Comment on me</h2>
+          <form> 
+            <textarea placeholder="Leave your comment"></textarea>
+            <div class="btn">
+             <input type="submit" value="Comment">
+             <button>Cancel</button> 
+             <div>
+           </form>
         </div>
       </div>
 
@@ -104,8 +116,14 @@
         <div id="popup-container">
           <div id="close-btn">
             <span id="close-btn">Close</span>
-          </div>
-          <h2>Comment on me</h2>
+          </div class="form">
+          <form> 
+           <textarea placeholder="Leave your comment"></textarea>
+           <div class="btn">
+            <input type="submit" value="Comment">
+            <button>Cancel</button> 
+            <div>
+          </form> 
         </div>
       </div>
     </div>
@@ -116,40 +134,5 @@
 
 
 <script type="text/javascript">
-  ////First Function
-  $(document).ready(function(){
-    $('#show-popup-btn').click(function(){
-      $('#popup-container').show();
-    })
-
-    //close btn
-    $('#close-btn').click(function(){
-      $('#popup-container').hide();
-    })
-  })
-
-//////Second Function
-  $(document).ready(function(){
-    $('#show-popup-btn1').click(function(){
-      $('#popup-container1').show();
-    })
-
-    //close btn
-    $('#close-btn1').click(function(){
-      $('#popup-container1').hide();
-    })
-  })
-  
-  ///Third atttempt
-  $(document).ready(function(){
-    $('#show-popup-btn2').click(function(){
-      $('#popup-container2').show();
-    })
-
-    //close btn
-    $('#close-btn2').click(function(){
-      $('#popup-container2').hide();
-    })
-  })
-</script>
+  </script>
 

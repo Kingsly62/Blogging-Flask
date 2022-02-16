@@ -107,3 +107,42 @@ function readPhone() {
       input222.value = parseInt(input222.value) +1;
       input222.style.color = "red";
   })
+
+
+
+    ////First Function
+    $(document).ready(function(){
+      $('#show-popup-btn').click(function(){
+        $('#popup-container').show();
+      })
+  
+      //close btn
+      $('#close-btn').click(function(){
+        $('#popup-container').hide();
+      })
+    })
+  
+  //////Second Function
+    $(document).ready(function(){
+      $('#show-popup-btn1').click(function(){
+        $('#popup-container1').show();
+      })
+  
+      //close btn
+      $('#close-btn1').click(function(){
+        $('#popup-container1').hide();
+      })
+    })
+    
+    ///Third atttempt
+    $(document).ready(function(){
+      $('#show-popup-btn2').click(function(){
+        $('#popup-container2').show();
+      })
+  
+      //close btn
+      $('#close-btn2').click(function(){
+        $('#popup-container2').hide();
+      })
+    })
+  
