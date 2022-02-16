@@ -22,7 +22,7 @@ Get started:https://github.com/Kingsly62/Blogging-Flask
 
 ### Heroku live link to my website
 
-[Click]()
+[Click](https://clinton-blog.herokuapp.com/blog)
 
 ### SetUp / Installation Requirements.
 
