@@ -166,3 +166,61 @@ button[type=button]{
     font-size: larger;
 
 }
+
+#popup-container{
+    display: none;
+    box-shadow: 0px 0px 10px grey;
+    background-color: blue;
+    width: 30%;
+    height: 40%;
+    margin-left: 50%;
+    position: absolute;
+}
+
+#close-btn{
+    float: right;
+    color: red;
+}
+
+#close-btn:hover{
+    cursor: pointer;
+}
+
+
+#popup-container1{
+    display: none;
+    box-shadow: 0px 0px 10px grey;
+    background-color: blue;
+    width: 30%;
+    height: 40%;
+    margin-left: 50%;
+    position: absolute;
+}
+
+#close-btn1{
+    float: right;
+    color: red;
+}
+
+#close-btn1:hover{
+    cursor: pointer;
+}
+
+#popup-container2{
+    display: none;
+    box-shadow: 0px 0px 10px grey;
+    background-color: blue;
+    width: 30%;
+    height: 40%;
+    margin-left: 50%;
+    position: absolute;
+}
+
+#close-btn2{
+    float: right;
+    color: red;
+}
+
+#close-btn2:hover{
+    cursor: pointer;
+}
