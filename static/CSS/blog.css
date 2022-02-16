@@ -224,3 +224,22 @@ button[type=button]{
 #close-btn2:hover{
     cursor: pointer;
 }
+
+button[type=submit]{
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    background-color: #273c75;
+    top: 60%;
+    position: absolute;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 90%;
+    top: 20%;
+    position: absolute;
+    border: none;
+    border-bottom: 2px solid #aaa;
+}
