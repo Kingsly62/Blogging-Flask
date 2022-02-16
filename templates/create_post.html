@@ -5,27 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/CSS/post.css" />
-    <title>Document</title>
+    <title>post_blog</title>
   </head>
   <body>
     <div class="post">
       <div class="header">
         <h2>Create Blog Post</h2>
       </div>
-      <div class="inputs">
-        <label class="heading">Heading</label><br />
-        <input type="head" width="100" /><br />
-        <label class="body">Body</label><br />
-        <textarea
-          type="body"
-          style="height: 200px"
-          placeholder="create a post"
-        ></textarea>
+      <p>
+        {% with messages =get_flashed_messages()%}
 
-        <div class="publish">
-          <button type="publish">Publish</button>
+        {% if messages %}
+        <ul>
+          {% for message in messages%}
+          <li>{{message}}</li>
+          {% endfor %}
+
+        </ul>
+        {% endif %}
+        {% endwith %}
+      </p>
+      <form action="">
+        <div class="inputs">
+          <label class="heading">Heading</label><br />
+          <input type="head" width="100" /><br />
+          <label class="body">Body</label><br />
+          <textarea
+            type="body"
+            style="height: 200px"
+            placeholder="create a post"
+          >
+          </textarea>
+          <form action="/load" method="post" enctype="multipart/form-data">
+            <input
+              type="file"
+              name="file"
+              class="form-control"
+              autocomplete="off"
+              placeholder="load image/files"
+              required
+            />
+            <button type="imageload" value="Load">Load</button>
+          </form>
+          <div class="publish">
+            <button type="publish">Publish</button>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>

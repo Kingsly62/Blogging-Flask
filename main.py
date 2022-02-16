@@ -1,6 +1,10 @@
 import email
-from flask import Flask, redirect, render_template, request, url_for
+from fileinput import filename
+from flask import Flask, redirect, render_template, request, url_for, flash
 import mysql.connector
+import os
+import urllib.request
+from werkzeug.utils import secure_filename
 
 API_KEY = "http://api.quotable.io/random"
 app = Flask(__name__)
@@ -11,6 +15,18 @@ conn = mysql.connector.connect(host="remotemysql.com",
                                database="MBlhVgFB01")
 
 cursor = conn.cursor()
+
+UPLOAD_FOLDER = 'static/Images'
+
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+
+ALLOWED_EXTENSION = set(['png', 'jpg', 'jpeg', 'gif'])
+
+
+def allowed_file(filename):
+    return ',' in filename and filename.rsplit(
+        ',', 1)[1].lower() in ALLOWED_EXTENSION
 
 
 @app.route('/')
@@ -72,6 +88,32 @@ def add_user():
 @app.route('/post')
 def post():
     return render_template('create_post.html')
+
+
+@app.route('/load', methods=['GET', 'POST'])
+def loadImage():
+    if 'file' not in request.files:
+        flash("No file part")
+
+    return redirect(request.url)
+    file = request.files['files']
+    if file.filename == '':
+        flash('No image selected for uploading')
+        return redirect(request.url)
+
+    if file and allowed_file(file.filename):
+        filename = secure_filename(file.filename)
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+
+        #print('upload_image filename:' + filename )
+
+        flash('Image succesfullly uploaded and displayed')
+
+        return render_template('create_post.html', filename=filename)
+
+    else:
+        flash('Allowed image types are png,jpeg,jpg,gif')
+        return redirect(request.url)
 
 
 if __name__ == "__main__":

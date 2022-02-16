@@ -1,5 +1,5 @@
 textarea[type=body]{
-    width: 90%;
+    width: 80%;
     border-radius: 3px;
 }
 
@@ -39,4 +39,10 @@ button[type=publish]:hover{
     border-radius: 3px;
     transition: all 0.5s ease-in-out;
 
+}
+
+input[type=file]{
+    width: 80%;
+    height: 30%;
+    background-color: #fff;
 }
